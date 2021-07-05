@@ -1,0 +1,60 @@
+{
+    "name":"testApp",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"testapp",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^4.2.1+400",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "quick":"modules/quick/",
+        "cfmigrations":"modules/cfmigrations/",
+        "testbox":"testbox/",
+        "logbox":"logbox/"
+    },
+    "dependencies":{
+        "coldbox":"^6.0.0",
+        "quick":"^4.0.0",
+        "cfmigrations":"^3.0.0",
+        "logbox":"^6.4.0+1513"
+    },
+    "scripts":{},
+    "testbox":{
+        "runner":"http://127.0.0.1:53163/tests/runner.cfm"
+    },
+
+
+"cfmigrations":{
+    "migrationsDirectory":"resources/database/migrations",
+    "schema":"INFORMATION_SCHEMA",
+    "connectionInfo":{
+        "bundleName":"com.h2database",
+        "bundleVersion":"1.4.200",
+        "password":"",
+        "connectionString":"jdbc:h2:/Users/elena/coldbox-examples/testApp/database/appDB;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;",
+        "class":"org.h2.Driver",
+        "username":""
+    },
+    "defaultGrammar":"AutoDiscover@qb"
+}
+
+
+}
